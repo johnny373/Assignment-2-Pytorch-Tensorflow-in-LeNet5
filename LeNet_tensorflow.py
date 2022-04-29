@@ -203,7 +203,7 @@ test_dataset = test_dataset.batch((batch_size // 4))
 model = LeNet(num_classes = number_of_category)
 
 model.compile(loss=tf.losses.categorical_crossentropy,
-              optimizer=tf.optimizers.SGD(learning_rate=1e-4, decay=1e-6, momentum=9e-1),
+              optimizer=tf.optimizers.SGD(learning_rate=0.0001, decay=0.000001, momentum=0.9),
               metrics=['accuracy'])
 
 start = time.time()
