@@ -526,10 +526,10 @@ pd.DataFrame(losses).to_csv('Handcraft_LeNet5_loss.csv')
 
 
 # TRAIN SET ACC
-Y_pred = model.forward(X_train)
-result = np.argmax(Y_pred, axis=1) - Y_train
-result = list(result)
-print("TRAIN--> Correct: " + str(result.count(0)) + " out of " + str(X_train.shape[0]) + ", acc=" + str(result.count(0)/X_train.shape[0]))
+# Y_pred = model.forward(X_train)
+# result = np.argmax(Y_pred, axis=1) - Y_train
+# result = list(result)
+# print("TRAIN--> Correct: " + str(result.count(0)) + " out of " + str(X_train.shape[0]) + ", acc=" + str(result.count(0)/X_train.shape[0]))
 
 result_list = list()
 # VAL SET ACC
